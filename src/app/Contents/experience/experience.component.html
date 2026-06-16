@@ -31,9 +31,11 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <ul *ngFor="let points of fullTimeExperiences[0].workArea">
-                  <li class="points">{{points}}</li>
-                </ul>
+                @for (points of fullTimeExperiences[0].workArea; track points) {
+                  <ul>
+                    <li class="points">{{points}}</li>
+                  </ul>
+                }
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -50,114 +52,120 @@
       <p>➢ Past Experiences: </p>
     </div>
     <br>
-    <!-- Start Internship Experiences -->
-    <div (mouseenter)='mEnter(2)' (mouseleave)='mLeave()' id="companyContainer1">
-      <div id="companyImage">
-        <img src="{{internshipExperiences[0].imagePath}}" alt="">
-      </div>
-      <div class="container-fluid bg-secondary"></div>
-      <div id="jobDescription">
-        <p id="companyName">Company Name: {{internshipExperiences[0].companyName}}</p>
-        <p id="companyDesignation">Designation: {{internshipExperiences[0].designation}}</p>
-        <p id="companyTenure">Tenure: {{internshipExperiences[0].tenure}}</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-          View More
-        </button>
-        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Work Area</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <!-- Start Internship Experiences -->
+      <div (mouseenter)='mEnter(2)' (mouseleave)='mLeave()' id="companyContainer1">
+        <div id="companyImage">
+          <img src="{{internshipExperiences[0].imagePath}}" alt="">
+        </div>
+        <div class="container-fluid bg-secondary"></div>
+        <div id="jobDescription">
+          <p id="companyName">Company Name: {{internshipExperiences[0].companyName}}</p>
+          <p id="companyDesignation">Designation: {{internshipExperiences[0].designation}}</p>
+          <p id="companyTenure">Tenure: {{internshipExperiences[0].tenure}}</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+            View More
+          </button>
+          <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Work Area</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  @for (points of internshipExperiences[0].workArea; track points) {
+                    <ul>
+                      <li class="points">{{points}}</li>
+                    </ul>
+                  }
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
               </div>
-              <div class="modal-body">
-                <ul *ngFor="let points of internshipExperiences[0].workArea">
-                  <li class="points">{{points}}</li>
-                </ul>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
 
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Stop -->
-    <br><br>
-    <!-- Start Internship Experiences -->
-    <div (mouseenter)='mEnter(2)' (mouseleave)='mLeave()' id="companyContainer2">
-      <div id="companyImage">
-        <img src="{{internshipExperiences[1].imagePath}}" alt="">
-      </div>
-      <div class="container-fluid bg-secondary"></div>
-      <div id="jobDescription">
-        <p id="companyName">Company Name: {{internshipExperiences[1].companyName}}</p>
-        <p id="companyDesignation">Designation: {{internshipExperiences[1].designation}}</p>
-        <p id="companyTenure">Tenure: {{internshipExperiences[1].tenure}}</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-          View More
-        </button>
-        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Work Area</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <!-- Stop -->
+      <br><br>
+      <!-- Start Internship Experiences -->
+      <div (mouseenter)='mEnter(2)' (mouseleave)='mLeave()' id="companyContainer2">
+        <div id="companyImage">
+          <img src="{{internshipExperiences[1].imagePath}}" alt="">
+        </div>
+        <div class="container-fluid bg-secondary"></div>
+        <div id="jobDescription">
+          <p id="companyName">Company Name: {{internshipExperiences[1].companyName}}</p>
+          <p id="companyDesignation">Designation: {{internshipExperiences[1].designation}}</p>
+          <p id="companyTenure">Tenure: {{internshipExperiences[1].tenure}}</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+            View More
+          </button>
+          <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Work Area</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  @for (points of internshipExperiences[1].workArea; track points) {
+                    <ul>
+                      <li class="points">{{points}}</li>
+                    </ul>
+                  }
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
               </div>
-              <div class="modal-body">
-                <ul *ngFor="let points of internshipExperiences[1].workArea">
-                  <li class="points">{{points}}</li>
-                </ul>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
 
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Stop -->
-    <br><br>
-    <!-- Start Internship Experiences -->
-    <div (mouseenter)='mEnter(2)' (mouseleave)='mLeave()' id="companyContainer3">
-      <div id="companyImage">
-        <img src="{{internshipExperiences[2].imagePath}}" alt="">
-      </div>
-      <div class="container-fluid bg-secondary"></div>
-      <div id="jobDescription">
-        <p id="companyName">Company Name: {{internshipExperiences[2].companyName}}</p>
-        <p id="companyDesignation">Designation: {{internshipExperiences[2].designation}}</p>
-        <p id="companyTenure">Tenure: {{internshipExperiences[2].tenure}}</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
-          View More
-        </button>
-        <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Work Area</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <ul *ngFor="let points of internshipExperiences[2].workArea">
-                  <li class="points">{{points}}</li>
-                </ul>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <!-- Stop -->
+      <br><br>
+      <!-- Start Internship Experiences -->
+      <div (mouseenter)='mEnter(2)' (mouseleave)='mLeave()' id="companyContainer3">
+        <div id="companyImage">
+          <img src="{{internshipExperiences[2].imagePath}}" alt="">
+        </div>
+        <div class="container-fluid bg-secondary"></div>
+        <div id="jobDescription">
+          <p id="companyName">Company Name: {{internshipExperiences[2].companyName}}</p>
+          <p id="companyDesignation">Designation: {{internshipExperiences[2].designation}}</p>
+          <p id="companyTenure">Tenure: {{internshipExperiences[2].tenure}}</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+            View More
+          </button>
+          <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Work Area</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  @for (points of internshipExperiences[2].workArea; track points) {
+                    <ul>
+                      <li class="points">{{points}}</li>
+                    </ul>
+                  }
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- Stop -->
     </div>
-    <!-- Stop -->
   </div>
-</div>
