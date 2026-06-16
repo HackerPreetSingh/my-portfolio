@@ -12,7 +12,7 @@ import {VgControlsModule} from '@videogular/ngx-videogular/controls';
 import {VgOverlayPlayModule} from '@videogular/ngx-videogular/overlay-play';
 import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { AboutComponent } from './Contents/about/about.component';
 import { EducationComponent } from './Contents/education/education.component';
 import { ProjectsComponent } from './Contents/projects/projects.component';
@@ -20,32 +20,25 @@ import { ContactComponent } from './Contents/contact/contact.component';
 import { ExperienceComponent } from './Contents/experience/experience.component';
 import { AwardsComponent } from './Contents/awards/awards.component';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HomepageComponent,
-    NavbarComponent,
-    ContentComponent,
-    FooterComponent,
-    AboutComponent,
-    ProjectsComponent,
-    ContactComponent,
-    EducationComponent,
-    ExperienceComponent,
-    AwardsComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-    VgCoreModule,
-    VgControlsModule,
-    VgOverlayPlayModule,
-    VgBufferingModule,
-    HttpClientModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        HomepageComponent,
+        NavbarComponent,
+        ContentComponent,
+        FooterComponent,
+        AboutComponent,
+        ProjectsComponent,
+        ContactComponent,
+        EducationComponent,
+        ExperienceComponent,
+        AwardsComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        ReactiveFormsModule,
+        VgCoreModule,
+        VgControlsModule,
+        VgOverlayPlayModule,
+        VgBufferingModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
