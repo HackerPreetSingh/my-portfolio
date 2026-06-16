@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators} from '@angular/forms';
 import { ContactMeService } from 'src/app/services/contact-me.service';
 import { Contact } from 'src/pojos/Contact';
 
@@ -15,9 +15,9 @@ export class ContactComponent implements OnInit {
   email:string="";
   description:string="";
   valid:boolean=false;
-  contactForm!:FormGroup;
+  contactForm!:UntypedFormGroup;
   contactClass!: Contact;
-  constructor(private formBuilder:FormBuilder,private contactMeService:ContactMeService) {
+  constructor(private formBuilder:UntypedFormBuilder,private contactMeService:ContactMeService) {
    }
 
   ngOnInit(): void {
