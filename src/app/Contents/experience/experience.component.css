@@ -1,0 +1,241 @@
+#experienceContainer{
+  color: bisque;
+  height: 95vw;
+}
+
+#heading1,#heading2,#heading1hover,#heading2hover{
+  position: relative;
+  top: 2.5vw;
+  font-family: cursive;
+  font-size: 2vw;
+}
+
+#heading1hover,#heading2hover{
+  font-weight: bolder;
+}
+
+#companyContainer,#companyContainer1,#companyContainer2,#companyContainer3{
+  display: flex;
+  position: relative;
+  top: 2vw;
+  height: 15vw;
+  width: 75vw;
+  left: 5vw;
+}
+
+#companyContainer:hover,#companyContainer1:hover,#companyContainer2:hover,#companyContainer3:hover{
+  border-radius: 10%;
+  -webkit-animation-name: color-transition;
+	animation-name: color-transition;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+
+#companyImage{
+  width: 20vw;
+  height: 15vw;
+  text-align: center;
+  margin: 0%;
+  flex: 0 0 35vw;
+}
+
+img{
+  top: 2vw;
+  position: relative;
+  width: 15vw;
+  height: 10vw;
+}
+
+
+#jobDescription{
+  text-align: center;
+  word-wrap: break-word;
+  position: relative;
+  top: 2vw;
+  flex: 0 0 45vw;
+}
+
+#companyName,#companyDesignation{
+  font-weight: bolder;
+}
+
+#companyName{
+  font-size: 1.5vw;
+}
+
+#companyDesignation{
+  font-size: 1.2vw;
+}
+
+#companyTenure{
+  font-size: 1vw;
+}
+
+.points{
+  text-align: justify;
+}
+
+.modal-content{
+  background-color: black;
+}
+
+@-webkit-keyframes color-transition {
+	0% {
+		background-color:  rgb(67, 87, 88);
+	}
+	33% {
+		background-color: #80D39B;
+	}
+	66% {
+		background-color: #BE3E82;
+	}
+	100% {
+		background-color: #4C6085;
+	}
+}
+
+@keyframes color-transition {
+	0% {
+		background-color: #4C6085;
+	}
+	33% {
+		background-color: #80D39B;
+	}
+	66% {
+		background-color: #BE3E82;
+	}
+	100% {
+		background-color: #4C6085;
+	}
+}
+
+@media(max-width:1250px){
+
+  #companyContainer,#companyContainer1,#companyContainer2,#companyContainer3{
+    left: 6.5vw;
+    top: 5vw;
+    height: 20vw;
+    border-radius: 10%;
+    -webkit-animation-name: color-transition;
+    animation-name: color-transition;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+
+  #experienceContainer{
+    height: 135vw;
+  }
+
+  #heading1,#heading2,#heading1hover,#heading2hover{
+    font-size: 3.5vw;
+  }
+
+  #jobDescription{
+    top: 0.5vw;
+    flex: 0 0 37vw;
+  }
+
+  #companyName{
+    font-size: 2vw;
+  }
+
+  #companyDesignation{
+    font-size: 1.5vw;
+  }
+
+  #companyTenure{
+    font-size: 1.4vw;
+  }
+}
+
+@media(max-width:991px){
+
+  #heading1,#heading2,#heading1hover,#heading2hover{
+    left: -8vw;
+  }
+  #companyContainer,#companyContainer1,#companyContainer2,#companyContainer3{
+    left: -1vw;
+  }
+}
+
+@media(max-width:880px){
+
+  #heading1,#heading2,#heading1hover,#heading2hover{
+    left: -6vw;
+  }
+  #companyContainer,#companyContainer1,#companyContainer2,#companyContainer3{
+    left: 1vw;
+  }
+}
+
+@media(max-width:830px){
+
+  #heading1,#heading2,#heading1hover,#heading2hover{
+    left: -4vw;
+  }
+  #companyContainer,#companyContainer1,#companyContainer2,#companyContainer3{
+    left: 3vw;
+  }
+}
+
+@media(max-width:600px){
+
+  #heading1,#heading2,#heading1hover,#heading2hover{
+    left: -2vw;
+  }
+  #companyContainer,#companyContainer1,#companyContainer2,#companyContainer3{
+    left: 5vw;
+  }
+}
+
+@media(max-width:560px){
+
+  #heading1,#heading2,#heading1hover,#heading2hover{
+    left: 0vw;
+  }
+  #companyContainer,#companyContainer1,#companyContainer2,#companyContainer3{
+    left: 7vw;
+  }
+}
+
+@media(max-width:350px){
+  #experienceContainer{
+    height: 160vw;
+  }
+  #companyContainer,#companyContainer1,#companyContainer2,#companyContainer3{
+    height: 22vw;
+  }
+}
+
+@media(max-width:280px){
+  #experienceContainer{
+    height: 190vw;
+  }
+  #companyContainer,#companyContainer1,#companyContainer2,#companyContainer3{
+    height: 27vw;
+    width: 77vw;
+  }
+  #companyName{
+    font-size: 2.2vw;
+  }
+
+  #companyDesignation{
+    font-size: 1.7vw;
+  }
+
+  #companyTenure{
+    font-size: 1.6vw;
+  }
+}

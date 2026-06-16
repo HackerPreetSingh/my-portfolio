@@ -1,0 +1,135 @@
+#aboutContainer{
+  color: bisque;
+  height: 65vw;
+}
+
+#aboutSection{
+  margin: 0%;
+}
+
+#intro {
+  position:relative;
+  top:4vw;
+  width: 18vw;
+  text-align: center;
+  margin-left: 5vw;
+}
+
+.my-image{
+  width: 15vw;
+  height: 20vw;
+  border-radius: 40%;
+}
+
+.aboutTextQuestion{
+  font-size: 1.5vw;
+  font-weight: bolder;
+  width: 18vw;
+}
+
+.aboutTextAnswer{
+  font-size: 1.2vw;
+  word-break: normal;
+  width: 20vw;
+}
+
+.resumeLink{
+  color: aqua;
+  font-size: 1vw;
+  width: 20vw;
+}
+
+#skillsHeading{
+  font-size: 2vw;
+  font-weight: bolder;
+  margin: 0%;;
+}
+
+#skills {
+  width: 45vw;
+  top: 70vw;
+  text-align: center;
+  position: absolute;
+  right: 12vw;
+  height: 40vw;
+}
+
+.progress {
+  font-weight: bolder;
+  height: 2vw;
+  width: 20vw;
+  display: flex;
+  font-size: 1vw;
+}
+
+#skills-1 {
+  float: left;
+}
+
+#skills-2 {
+  float: right;
+}
+
+@media(max-width:1200px) {
+
+  #aboutContainer{
+    height: 162vw;
+  }
+  #intro{
+    left: 32vw;
+  }
+  .aboutTextQuestion,.aboutTextAnswer,.resumeLink{
+    font-size: 2vw;
+    width: 30vw;
+    left: -5.5vw;
+    position: relative;
+  }
+  #skillsHeading{
+    font-size: 2.2vw;
+  }
+  #skills{
+    top: 145vw;
+    left: 9vw;
+    width: 81vw;
+  }
+  .progress{
+    height: 3vw;
+    width: 38vw;
+    font-size: 1.9vw;
+  }
+}
+
+@media(max-width: 998px) {
+  #aboutContainer{
+    height: 167vw;
+  }
+  #skills{
+    height: 65vw;
+  }
+  #skills-1,#skills-2 {
+    height: 100%;
+    line-height: 2.5vw;
+  }
+  .progress{
+    height: 4vw;
+  }
+}
+
+@media(max-width: 400px) {
+  #aboutContainer{
+    height: 182vw;
+  }
+  #skills{
+    top: 150vw;
+  }
+}
+
+@media(max-width: 350px) {
+
+  #aboutContainer{
+    height: 202vw;
+  }
+  #skills{
+    top: 160vw;
+  }
+}

@@ -1,0 +1,151 @@
+#educationContainer{
+  height: 66vw;
+}
+
+#tenthEducation{
+  width: 27vw;
+  height: 47vw;
+  top: 1vw;
+  left: 5vw;
+}
+
+#twelwthEducation{
+  width: 27vw;
+  height: 40vw;
+  top: 1vw;
+  left: 2.5vw;
+}
+
+#graduation{
+  width: 27vw;
+  height: 45vw;
+  top: 1vw;
+}
+
+#tenthEducation,#twelwthEducation,#graduation,a{
+  font-size: 1.3vw;
+}
+
+.card-title{
+  font-size: 1.5vw;
+  font-weight: bolder;
+  font-family: cursive;
+}
+
+.list-group-item{
+  text-align-last:justify;
+  padding: 0%;
+}
+
+@media(max-width:1753px) {
+  #educationContainer{
+    height: 73vw;
+  }
+
+  #tenthEducation{
+    height: 52vw;
+  }
+  #twelwthEducation{
+    height: 44vw;
+  }
+  #graduation{
+    height: 49vw;
+  }
+  #tenthEducation,#twelwthEducation,#graduation,a{
+    font-size: 1.5vw;
+  }
+  .card-title{
+    font-size: 1.7vw;
+  }
+}
+
+@media(max-width:1300px) {
+  #tenthEducation{
+    height: 56vw;
+  }
+  #twelwthEducation{
+    height: 51vw;
+  }
+  #graduation{
+    height: 53vw;
+  }
+  #tenthEducation,#twelwthEducation,#graduation,a{
+    font-size: 1.7vw;
+  }
+  .card-title{
+    font-size: 1.9vw;
+  }
+}
+
+@media(max-width:1040px) {
+  #educationContainer{
+    height: 76vw;
+  }
+
+  #tenthEducation{
+    height: 59vw;
+  }
+  #twelwthEducation{
+    height: 52vw;
+  }
+  #graduation{
+    height: 56vw;
+  }
+}
+
+@media(max-width:998px) {
+  #tenthEducation,#twelwthEducation,#graduation,a{
+    font-size: 1.8vw;
+  }
+  .card-title{
+    font-size: 2vw;
+  }
+}
+
+@media(max-width:440px) {
+  #educationContainer{
+    height: 81vw;
+  }
+
+  #tenthEducation{
+    height: 64vw;
+  }
+  #twelwthEducation{
+    height: 56vw;
+  }
+  #graduation{
+    height: 60vw;
+  }
+}
+
+@media(max-width:330px) {
+  #educationContainer{
+    height: 90vw;
+  }
+
+  #tenthEducation{
+    height: 69vw;
+  }
+  #twelwthEducation{
+    height: 61vw;
+  }
+  #graduation{
+    height: 65vw;
+  }
+}
+
+@media(max-width:289px) {
+  #educationContainer{
+    height: 101vw;
+  }
+
+  #tenthEducation{
+    height: 74vw;
+  }
+  #twelwthEducation{
+    height: 66vw;
+  }
+  #graduation{
+    height: 70vw;
+  }
+}

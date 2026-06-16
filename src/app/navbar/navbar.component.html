@@ -1,0 +1,21 @@
+<div class="video-page-container">
+  <div class="video-player-wrapper">
+    <div class="gfg">
+      <vg-player preload="auto" controls>
+        <video loop autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
+          <source src="../../assets/videos/Computertyping.mp4" type="video/mp4">
+        </video>
+      </vg-player>
+    </div>
+  </div>
+  <div id="text">
+    <p class="first-txt">{{firstText}}</p>
+    <p class="second-txt">{{secondText}}
+      <span class="blinking-cursor">|</span>
+    </p>
+  </div>
+  <div (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+    <button id="btn" type="button" class="btn btn-outline-light"
+      onclick="location.href='#content'">{{buttonText}}</button>
+  </div>
+</div>

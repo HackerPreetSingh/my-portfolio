@@ -1,0 +1,63 @@
+<div class="container-fluid bg-dark">
+
+  <div class="container" style="color: bisque;font-weight: bold;width: 45%;">
+    <div class="container-fluid text-center my-3">
+      <h1>Contact Me</h1>
+      <p>---X---X---</p>
+    </div>
+    <div class="container bg-light" style="height: 1px;"></div>
+    <form class="row g-3" [formGroup]="contactForm">
+      <div class="col-md-6">
+        <label for="inputName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="inputName" id="name" placeholder="First and Last Name"
+          formControlName="name">
+        <div
+          *ngIf="!this.contactForm.get('name')!.valid&&(this.contactForm.get('name')!.dirty||this.contactForm.get('name')!.touched)"
+          style="color: red;">
+          <div *ngIf="this.contactForm.get('name')!.errors?.['required']">
+            Name is required.
+          </div>
+          <div *ngIf="this.contactForm.get('name')!.errors?.['minlength']">
+            Name must be at least 3 characters long.
+          </div>
+          <div *ngIf="this.contactForm.get('name')!.errors?.['pattern']">
+            Name must contain valid characters only.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="abc@gmail.com" formControlName="email">
+        <div
+          *ngIf="!this.contactForm.get('email')!.valid&&(this.contactForm.get('email')!.dirty||this.contactForm.get('email')!.touched)"
+          style="color: red;">
+          <div *ngIf="this.contactForm.get('email')!.errors?.['required']">
+            Email cannot be empty!
+          </div>
+          <div *ngIf="this.contactForm.get('email')!.errors?.['email']">
+            Please enter email in apt format!
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <label for="inputDescription" class="form-label">Description</label>
+        <textarea id="description" class="form-control" name="description" rows="4" cols="50"
+          placeholder="Type your description here." formControlName="description">
+                </textarea>
+            <div *ngIf="!this.contactForm.get('description')!.valid&&(this.contactForm.get('description')!.dirty||this.contactForm.get('description')!.touched)"
+                style="color: red;">
+                <div *ngIf="this.contactForm.get('description')!.errors?.['required']">
+                    Kindly mention some description in order to contact Owner of this page.
+                  </div>
+                  <div *ngIf="this.contactForm.get('description')!.errors?.['maxlength']">
+                    Description can be maximum upto 500 characters.
+                  </div>
+            </div>
+      </div>
+      <div class="col-12" style="text-align: center;">
+        <button type="submit" id="submitButton" class="btn btn-primary my-2" (click)="submitForm()"
+          [disabled]="!this.contactForm.valid">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

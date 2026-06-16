@@ -1,0 +1,111 @@
+#projectContainer{
+  color: bisque;
+  height: 60vw;
+}
+
+#carouselExampleIndicators{
+  top: 5vw;
+}
+
+#imageContainer{
+  width: 30vw;
+  height: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-item{
+  height: 45vw;
+}
+
+.carousel-caption{
+  top: 22vw;
+}
+
+
+@media(max-width:1250px) {
+  #projectContainer{
+    height: 73vw;
+  }
+  .carousel-item{
+    height: 50vw;
+  }
+}
+
+@media(max-width:1200px) {
+  #projectContainer{
+    height: 79vw;
+  }
+  .carousel-item{
+    height: 55vw;
+  }
+  .carousel-caption{
+    top: 23vw;
+  }
+}
+
+@media(max-width:998px) {
+  #projectContainer{
+    height: 65vw;
+  }
+  .carousel-item{
+    height: 42vw;
+  }
+  #description{
+    display: none;
+  }
+}
+
+@media(max-width:550px) {
+  #projectContainer{
+    height: 65vw;
+  }
+  .carousel-item{
+    height: 47vw;
+  }
+}
+
+@media(max-width:500px) {
+  #projectContainer{
+    height: 70vw;
+  }
+  .carousel-item{
+    height: 52vw;
+  }
+}
+
+@media(max-width:370px) {
+  #projectContainer{
+    height: 75vw;
+  }
+  .carousel-item{
+    height: 57vw;
+  }
+}
+
+@media(max-width:295px) {
+  #projectContainer{
+    height: 80vw;
+  }
+  .carousel-item{
+    height: 62vw;
+  }
+}
+
+@media(max-width:250px) {
+  #projectContainer{
+    height: 90vw;
+  }
+  .carousel-item{
+    height: 72vw;
+  }
+}
+
+@media(max-width:235px) {
+  #projectContainer{
+    height: 100vw;
+  }
+  .carousel-item{
+    height: 82vw;
+  }
+}

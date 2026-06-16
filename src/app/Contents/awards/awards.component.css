@@ -1,0 +1,272 @@
+#awardsContainer{
+  color: bisque;
+  height: 100vw;
+}
+
+#awards,#certifications{
+  position: relative;
+  font-family: cursive;
+  font-size: 2vw;
+  left: 4.5vw;
+}
+
+#awards{
+  top: 2.5vw;
+}
+
+#certifications{
+  top: 8vw;
+}
+
+#awardsTilesContainer{
+  top: 5vw;
+  left: 15vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  width: 70vw;
+  height: 20vw;
+  position: relative;
+  text-align: center;
+  font-size: 2vw;
+  font-family: cursive;
+}
+
+#certificationTilesContainer{
+  top: 12vw;
+  left: 15vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70vw;
+  height: 50vw;
+  position: relative;
+  display: flex;
+  text-align: center;
+  font-size: 2vw;
+  font-family: cursive;
+}
+
+#awards-flip-box-title{
+  position: relative;
+  top: 4vw;
+  text-decoration:underline;
+  text-decoration-style: double;
+}
+
+#certifications-flip-box-title{
+  position: relative;
+  top: 1vw;
+  text-decoration:underline;
+  text-decoration-style: double;
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.awards-flip-box-1,.awards-flip-box-2,.certification-flip-box-1,.certification-flip-box-2,.certification-flip-box-3 {
+  position: relative;
+  width: 31vw;
+  height: 23vw;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.certification-flip-box-back-1 p,.certification-flip-box-back-2 p,.certification-flip-box-back-3 p {
+  position: absolute;
+  top: 5vw;
+}
+
+#trophyImage{
+  position: relative;
+  top: 2vw;
+  width: 5vw;
+  height: 5vw;
+  margin: auto;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+/* This container is needed to position the front and back side */
+.awards-flip-box-inner-1,.awards-flip-box-inner-2,.certification-flip-box-inner-1,.certification-flip-box-inner-2,.certification-flip-box-inner-3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.awards-flip-box-1:hover .awards-flip-box-inner-1,.certification-flip-box-1:hover .certification-flip-box-inner-1,.certification-flip-box-3:hover .certification-flip-box-inner-3 {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.awards-flip-box-front-1, .awards-flip-box-back-1,.awards-flip-box-front-2, .awards-flip-box-back-2,.certification-flip-box-front-1,.certification-flip-box-back-1,.certification-flip-box-front-2,.certification-flip-box-back-2,.certification-flip-box-front-3,.certification-flip-box-back-3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+#certificationImage1,#certificationImage2,#certificationImage3{
+  width: 16vw;
+  height: 16vw;
+  position: relative;
+  left: 7vw;
+  top: -2vw;
+}
+
+/* Style the front side */
+.awards-flip-box-front-1,.awards-flip-box-front-2,.certification-flip-box-front-1,.certification-flip-box-front-2,.certification-flip-box-front-3 {
+  background-color: rgb(255, 255, 108);
+  color: black;
+}
+
+/* Style the back side */
+.awards-flip-box-back-1,.awards-flip-box-back-2,.certification-flip-box-back-1,.certification-flip-box-back-2,.certification-flip-box-back-3 {
+  background-color: rgb(255, 255, 108);
+  color: black;
+}
+
+/* Style the back side */
+.awards-flip-box-back-1,.certification-flip-box-back-1,.certification-flip-box-back-3 {
+  transform: rotateY(180deg);
+}
+
+/* .awards-flip-box-front-1,.awards-flip-box-front-2,.certification-flip-box-front-1,.certification-flip-box-front-2,.certification-flip-box-front-3 {
+  -webkit-animation-name: color-transition-for-awards;
+	animation-name: color-transition-for-awards;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+
+@-webkit-keyframes color-transition-for-awards {
+	0% {
+		background-color: rgb(255, 255, 108);
+	}
+	33% {
+		background-color: transparent;
+	}
+	66% {
+		background-color: rgb(255, 255, 108);
+	}
+	100% {
+		background-color: transparent;
+	}
+}
+
+@keyframes color-transition-for-awards {
+	0% {
+		background-color: rgb(255, 255, 108);
+	}
+	33% {
+		background-color: transparent;
+	}
+	66% {
+		background-color: rgb(255, 255, 108);
+	}
+	100% {
+		background-color: transparent;
+	}
+} */
+
+.awards-flip-box-2:hover .awards-flip-box-inner-2,.certification-flip-box-2:hover .certification-flip-box-inner-2 {
+  transform: rotateX(180deg);
+}
+
+.awards-flip-box-back-2,.certification-flip-box-back-2 {
+  transform: rotateX(180deg);
+}
+
+@media(max-width:1200px){
+
+  #awardsContainer{
+    height: 110vw;
+  }
+}
+
+@media(max-width:900px){
+
+  #awardsContainer{
+    height: 125vw;
+  }
+
+  #awardsTilesContainer,#certificationTilesContainer{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.2vw;
+  }
+
+  .awards-flip-box-front-1,.awards-flip-box-front-2,.certification-flip-box-front-1,.certification-flip-box-front-2,.certification-flip-box-front-3 {
+    font-weight: bolder;
+  }
+
+  #awards,#certifications{
+    font-size: 4.5vw;
+  }
+
+  #certificationImage1{
+    top: -5vw;
+    width: 16vw;
+    height: 16vw;
+  }
+
+  #certificationImage2{
+    top: -5vw;
+    width: 16vw;
+    height: 16vw;
+  }
+
+  #certificationImage3{
+    top: -5.5vw;
+    width: 16vw;
+    height: 16vw;
+  }
+
+  .certification-flip-box-back-1 p,.certification-flip-box-back-2 p,.certification-flip-box-back-3 p{
+    top: 2.5vw;
+  }
+
+  .awards-flip-box-back-1, .awards-flip-box-back-2 {
+    top: 0vw;
+    font-size: 2vw;
+  }
+
+  .awards-flip-box-back-1 a, .awards-flip-box-back-2 a{
+    position: relative;
+    top: -3.5vw;
+    width: 23vw;
+    height: 5.5vw;
+    font-size: 1.5vw;
+  }
+  #certifications-flip-box-title{
+    font-size: 2.3vw;
+  }
+}
+
+@media(max-width:350px){
+  #certificationImage1{
+    top: -2vw;
+    width: 15vw;
+    height: 15vw;
+  }
+
+  #certificationImage2{
+    top: -2vw;
+    width: 15vw;
+    height: 15vw;
+  }
+
+  #certificationImage3{
+    top: -5.5vw;
+    width: 15vw;
+    height: 15vw;
+  }
+}

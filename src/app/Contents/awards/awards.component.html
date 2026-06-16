@@ -1,0 +1,124 @@
+<div id="awardsContainer" class="container-fluid bg-dark">
+
+  <div class="container-fluid text-center my-1" style="color: bisque;">
+    <h1>Awards and Certifications</h1>
+    <p>---X---X---</p>
+  </div>
+  <div class="container-fluid bg-light" style="height: 0.1vw;"></div>
+
+  <!-- AWARDS -->
+  <div id="awards">
+    <p>➢ Awards </p>
+  </div>
+  <div id="awardsTilesContainer">
+
+    <!-- First Card -->
+    <div class="awards-flip-box-1">
+      <div class="awards-flip-box-inner-1">
+        <div class="awards-flip-box-front-1">
+
+          <div id="trophyImage">
+            <img src="{{trophyLink}}" alt="">
+          </div>
+          <p id="awards-flip-box-title">
+            {{awards[0].title}}
+          </p>
+        </div>
+
+        <div class="awards-flip-box-back-1">
+          <p>{{awards[0].description}}</p>
+          <br>
+          <a type="button" class="btn btn-outline-success btn-lg" href={{awards[0].credentialsLink}}
+            target="_blank">Link to
+            Award Certificate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Card -->
+    <div class="awards-flip-box-2">
+      <div class="awards-flip-box-inner-2">
+        <div class="awards-flip-box-front-2">
+
+          <div id="trophyImage">
+            <img src="{{trophyLink}}" alt="">
+          </div>
+          <p id="awards-flip-box-title">
+            {{awards[1].title}}
+          </p>
+        </div>
+
+        <div class="awards-flip-box-back-2">
+          <p>{{awards[1].description}}</p>
+          <br>
+          <a type="button" class="btn btn-outline-success btn-lg" href={{awards[1].credentialsLink}}
+            target="_blank">Link to
+            Award Certificate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
+  <!-- CERTIFICATIONS -->
+  <div id="certifications">
+    <p>➢ Certifications </p>
+  </div>
+  <div id="certificationTilesContainer">
+
+    <!-- First Card -->
+    <div class="certification-flip-box-1">
+      <div class="certification-flip-box-inner-1">
+        <div class="certification-flip-box-front-1">
+          <p id="certifications-flip-box-title">
+            {{certifications[0].title}}
+          </p>
+          <div id="certificationImage1">
+            <img src="../../../assets/images/awardsAndCertifications/certifications/certification.png" alt="">
+          </div>
+        </div>
+
+        <div class="certification-flip-box-back-1">
+          <p>{{certifications[0].description}}</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Second Card -->
+    <div class="certification-flip-box-2">
+      <div class="certification-flip-box-inner-2">
+        <div class="certification-flip-box-front-2">
+          <p id="certifications-flip-box-title">
+            {{certifications[1].title}}
+          </p>
+          <div id="certificationImage2">
+            <img src="../../../assets/images/awardsAndCertifications/certifications/certification.png" alt="">
+          </div>
+        </div>
+
+        <div class="certification-flip-box-back-2">
+          <p>{{certifications[1].description}}</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Third Card -->
+    <div class="certification-flip-box-3">
+      <div class="certification-flip-box-inner-3">
+        <div class="certification-flip-box-front-3">
+          <p id="certifications-flip-box-title">
+            {{certifications[2].title}}
+          </p>
+          <div id="certificationImage3">
+            <img src="../../../assets/images/awardsAndCertifications/certifications/certification.png" alt="">
+          </div>
+        </div>
+
+        <div class="certification-flip-box-back-3">
+          <p>{{certifications[2].description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

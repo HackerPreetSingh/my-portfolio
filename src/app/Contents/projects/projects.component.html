@@ -1,0 +1,108 @@
+<div id="projectContainer" class="container-fluid bg-dark">
+  <div class="container-fluid text-center my-1">
+    <h1>My Projects</h1>
+    <p>--X--X--</p>
+  </div>
+  <div class="container-fluid bg-light" style="height: 0.1vw;"></div>
+  <!-- data-bs-touch="false" -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+      <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+        aria-label="Slide 6"></button> -->
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3500">
+        <div id="imageContainer"><img class="w-100" src="{{this.projects[0].imagePath}}" alt="First slide">
+        </div>
+        <div class="carousel-caption">
+          <h5>{{this.projects[0].projectName}}</h5>
+          <p>{{this.projects[0].projectBrief}}</p>
+          <p id="description">{{this.projects[0].projectDescription}}</p>
+          <br>
+          <a type="button" class="btn btn-outline-light" href={{this.projects[0].projectLink}} target="_blank">Link to
+            Project</a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3500">
+        <div id="imageContainer"><img class=" w-100" src="{{this.projects[1].imagePath}}" alt="Second slide">
+        </div>
+        <div class="carousel-caption">
+          <h5>{{this.projects[1].projectName}}</h5>
+          <p>{{this.projects[1].projectBrief}}</p>
+          <p id="description">{{this.projects[1].projectDescription}}</p>
+          <br>
+          <a type="button" class="btn btn-outline-light" href={{this.projects[1].projectLink}} target="_blank">Link to
+            Project</a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3500">
+        <div id="imageContainer"><img class=" w-100" src="{{this.projects[2].imagePath}}" alt="Third slide">
+        </div>
+        <div class="carousel-caption">
+          <h5>{{this.projects[2].projectName}}</h5>
+          <p>{{this.projects[2].projectBrief}}</p>
+          <p id="description">{{this.projects[2].projectDescription}}</p>
+          <br>
+          <a type="button" class="btn btn-outline-light" href={{this.projects[2].projectLink}} target="_blank">Link to
+            Project</a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3500">
+        <div id="imageContainer"><img class=" w-100" src="{{this.projects[3].imagePath}}" alt="Third slide">
+        </div>
+        <div class="carousel-caption">
+          <h5>{{this.projects[3].projectName}}</h5>
+          <p>{{this.projects[3].projectBrief}}</p>
+          <p id="description">{{this.projects[3].projectDescription}}</p>
+          <br>
+          <a type="button" class="btn btn-outline-light" href={{this.projects[3].projectLink}} target="_blank">Link to
+            Project</a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3500">
+        <div id="imageContainer"><img class=" w-100" src="{{this.projects[4].imagePath}}" alt="Third slide">
+        </div>
+        <div class="carousel-caption">
+          <h5>{{this.projects[4].projectName}}</h5>
+          <p>{{this.projects[4].projectBrief}}</p>
+          <p id="description">{{this.projects[4].projectDescription}}</p>
+          <br>
+          <a type="button" class="btn btn-outline-light" href={{this.projects[4].projectLink}} target="_blank">Link to
+            Project</a>
+        </div>
+      </div>
+      <!-- <div class="carousel-item" data-bs-interval="3500">
+        <div id="imageContainer"><img class=" w-100" src="{{this.projects[5].imagePath}}" alt="Third slide">
+        </div>
+        <div class="carousel-caption">
+          <h5>{{this.projects[5].projectName}}</h5>
+          <p>{{this.projects[5].projectBrief}}</p>
+          <p id="description">{{this.projects[5].projectDescription}}</p>
+          <br>
+          <a type="button" class="btn btn-outline-light" href={{this.projects[5].projectLink}} target="_blank">Link to
+            Project</a>
+        </div>
+      </div> -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>

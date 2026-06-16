@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "hempreet-singh": {
+      "hosting": {
+        "MyPortfolio": [
+          "hempreet-singh"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "hempreet-singh"
+  }
+}
