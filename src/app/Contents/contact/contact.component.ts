@@ -5,9 +5,10 @@ import { ContactMeService } from 'src/app/services/contact-me.service';
 import { Contact } from 'src/pojos/Contact';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+    selector: 'app-contact',
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.css'],
+    standalone: false
 })
 export class ContactComponent implements OnInit {
 
