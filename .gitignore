@@ -45,3 +45,23 @@ Thumbs.db
 .firebase
 *-debug.log
 .runtimeconfig.json
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Mac OS
+.AppleDouble
+.LSOverride
+._*
+
+# Firebase
+firebase-debug.log
+
+# Angular
+.angular
