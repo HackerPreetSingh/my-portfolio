@@ -20,6 +20,10 @@ import { ContactComponent } from './Contents/contact/contact.component';
 import { ExperienceComponent } from './Contents/experience/experience.component';
 import { AwardsComponent } from './Contents/awards/awards.component';
 
+import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
+
 @NgModule({ declarations: [
         AppComponent,
         HomepageComponent,
@@ -40,5 +44,9 @@ import { AwardsComponent } from './Contents/awards/awards.component';
         VgCoreModule,
         VgControlsModule,
         VgOverlayPlayModule,
-        VgBufferingModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
+        VgBufferingModule], providers: [
+            provideHttpClient(withInterceptorsFromDi()),
+            provideFirebaseApp(() => initializeApp(environment.firebase)),
+            provideFirestore(() => getFirestore())
+        ] })
 export class AppModule { }

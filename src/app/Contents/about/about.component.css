@@ -1,135 +1,155 @@
 #aboutContainer{
   color: bisque;
-  height: 65vw;
 }
 
 #aboutSection{
-  margin: 0%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 4vw;
+  padding-bottom: 6vw;
+  gap: 5vw;
 }
 
-#intro {
-  position:relative;
-  top:4vw;
-  width: 18vw;
+#intro{
+  width: 20vw;
   text-align: center;
-  margin-left: 5vw;
+  padding-top: 8vw;
+  flex-shrink: 0;
 }
 
 .my-image{
-  width: 15vw;
-  height: 20vw;
+  width: 13vw;
+  height: 18vw;
   border-radius: 40%;
 }
 
 .aboutTextQuestion{
   font-size: 1.5vw;
   font-weight: bolder;
-  width: 18vw;
 }
 
 .aboutTextAnswer{
   font-size: 1.2vw;
   word-break: normal;
-  width: 20vw;
 }
 
 .resumeLink{
   color: aqua;
   font-size: 1vw;
-  width: 20vw;
+}
+
+#skillsWrapper{
+  width: 60vw;
 }
 
 #skillsHeading{
   font-size: 2vw;
   font-weight: bolder;
-  margin: 0%;;
-}
-
-#skills {
-  width: 45vw;
-  top: 70vw;
+  margin: 0%;
   text-align: center;
-  position: absolute;
-  right: 12vw;
-  height: 40vw;
 }
 
-.progress {
-  font-weight: bolder;
+#skills{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5vw 2vw;
+}
+
+.progress{
+  width: 100%;
   height: 2vw;
-  width: 20vw;
-  display: flex;
+  font-weight: bolder;
   font-size: 1vw;
 }
 
-#skills-1 {
-  float: left;
+.skill-progress{
+  position: relative;
 }
 
-#skills-2 {
-  float: right;
+.skill-label{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  z-index: 2;
+  pointer-events: none;
 }
 
-@media(max-width:1200px) {
+@media (max-width: 1200px) {
 
-  #aboutContainer{
-    height: 162vw;
+  #aboutSection{
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
   }
+
   #intro{
-    left: 32vw;
+    width: 60vw;
+    padding-top: 0;
   }
-  .aboutTextQuestion,.aboutTextAnswer,.resumeLink{
+
+  .my-image{
+    width: 25vw;
+    height: 35vw;
+  }
+
+  .aboutTextQuestion{
+    font-size: 3vw;
+  }
+
+  .aboutTextAnswer{
+    font-size: 2.5vw;
+  }
+
+  .resumeLink{
     font-size: 2vw;
-    width: 30vw;
-    left: -5.5vw;
-    position: relative;
   }
+
+  #skillsWrapper{
+    width: 90%;
+  }
+
   #skillsHeading{
-    font-size: 2.2vw;
+    font-size: 4vw;
   }
-  #skills{
-    top: 145vw;
-    left: 9vw;
-    width: 81vw;
-  }
+
   .progress{
-    height: 3vw;
-    width: 38vw;
-    font-size: 1.9vw;
+    height: 3.5vw;
+    font-size: 2vw;
   }
 }
 
-@media(max-width: 998px) {
-  #aboutContainer{
-    height: 167vw;
-  }
+@media (max-width: 768px) {
+
   #skills{
-    height: 65vw;
+    grid-template-columns: 1fr;
   }
-  #skills-1,#skills-2 {
-    height: 100%;
-    line-height: 2.5vw;
+
+  .my-image{
+    width: 40vw;
+    height: 55vw;
   }
+
+  .aboutTextQuestion{
+    font-size: 5vw;
+  }
+
+  .aboutTextAnswer{
+    font-size: 4vw;
+  }
+
+  .resumeLink{
+    font-size: 3.5vw;
+  }
+
+  #skillsHeading{
+    font-size: 6vw;
+  }
+
   .progress{
-    height: 4vw;
-  }
-}
-
-@media(max-width: 400px) {
-  #aboutContainer{
-    height: 182vw;
-  }
-  #skills{
-    top: 150vw;
-  }
-}
-
-@media(max-width: 350px) {
-
-  #aboutContainer{
-    height: 202vw;
-  }
-  #skills{
-    top: 160vw;
+    height: 6vw;
+    font-size: 3vw;
   }
 }
