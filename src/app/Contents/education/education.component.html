@@ -1,109 +1,103 @@
 <div id="educationContainer" class="my-1 bg-dark">
 
-  <div id="cardsContainer" class="row card-group">
+  <div id="cardsContainer" class="row">
 
     <div class="container-fluid text-center my-1" style="color: bisque;">
       <h1>Education</h1>
       <p>---X---X---</p>
     </div>
+
     <div class="container-fluid bg-light" style="height: 2px;"></div>
-    <div class="col-4">
 
-      <div class="col">
-        <div id="tenthEducation" class="card">
-          <img src="../../../assets/images/educationInstitutions/Hartmann_College.jpg" class="card-img-top img-thumbnail img-rounded">
+    <div
+  class="col-lg-4 col-md-6 col-12"
+  *ngFor="let education of educationList">
+
+      <div class="educationCol">
+
+        <div class="card educationCard">
+
+          <img
+            [src]="education.imageUrl"
+            class="card-img-top img-thumbnail img-rounded">
+
           <div class="card-body">
-            <p class="card-title text-center">10th Standard</p>
-            <div class="container-fluid text-center my-1 bg-dark" style="color: bisque;">
-              <p>---X---X---</p>
-            </div>
-            <p class="card-title text-center">Hartmann College</p>
 
+            <p class="card-title text-center">
+              {{ education.title }}
+            </p>
+
+            <div
+              class="container-fluid text-center my-1 bg-dark"
+              style="color: bisque;">
+
+              <p>---X---X---</p>
+
+            </div>
+
+            <p class="card-title text-center">
+              {{ education.institution }}
+            </p>
 
             <ul class="list-group list-group-flush">
-              <li class="list-group-item  container-fluid">
-                <p>Percentage : 89%</p>
+
+              <li class="list-group-item container-fluid">
+                <p>
+                  Percentage : {{ education.score }}
+                </p>
               </li>
-              <li class="list-group-item  container-fluid">
-                <p>Year : 2015</p>
+
+              <li
+                *ngIf="education.year"
+                class="list-group-item container-fluid">
+
+                <p>
+                  Year : {{ education.year }}
+                </p>
+
               </li>
-              <li class="list-group-item  container-fluid">
-                <p>Subjects taken : All General Subjects</p>
+
+              <li
+                *ngIf="education.course"
+                class="list-group-item container-fluid">
+
+                <p>
+                  Course : {{ education.course }}
+                </p>
+
               </li>
+
+              <li class="list-group-item container-fluid">
+
+                <p>
+                  {{ education.details }}
+                </p>
+
+              </li>
+
             </ul>
-            <p id="institutionLink"><a href="https://hartmanncollege.org/" target="_blank"
-                class="btn btn-outline-primary container-fluid">Click
-                to
-                Know more about my school.</a></p>
+
+            <p id="institutionLink">
+
+              <a
+                [href]="education.website"
+                target="_blank"
+                class="btn btn-outline-primary container-fluid">
+
+                Click to Know more about this Institution.
+
+              </a>
+
+            </p>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
 
-    <div class="col-4">
-
-      <div class="col">
-        <div id="twelwthEducation" class="card">
-          <img src="../../../assets/images/educationInstitutions/grm.jpg" class="card-img-top img-thumbnail img-rounded">
-          <div class="card-body">
-            <p class="card-title text-center">12th Standard</p>
-            <div class="container-fluid text-center my-1 bg-dark" style="color: bisque;">
-              <p>---X---X---</p>
-            </div>
-            <p class="card-title text-center">G.R.M. School</p>
-
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item  container-fluid">
-                <p>Percentage : 89%</p>
-              </li>
-              <li class="list-group-item  container-fluid">
-                <p>Year : 2017</p>
-              </li>
-              <li class="list-group-item  container-fluid">
-                <p>Subjects taken : P.C.M. with Computer</p>
-              </li>
-            </ul>
-            <p id="institutionLink"><a href="https://www.grmschool.com/" target="_blank"
-                class="btn btn-outline-primary container-fluid">Click
-                to
-                Know more about my school.</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="col-4">
-
-      <div class="col">
-        <div id="graduation" class="card">
-          <img src="../../../assets/images/educationInstitutions/msit.jpg" class="card-img-top img-thumbnail img-rounded">
-          <div class="card-body">
-            <p class="card-title text-center">Graduation</p>
-            <div class="container-fluid text-center my-1 bg-dark" style="color: bisque;">
-              <p>---X---X---</p>
-            </div>
-            <p class="card-title text-center">M.S.I.T.</p>
-
-
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item  container-fluid">
-                <p>Percentage : 89.1%</p>
-              </li>
-              <li class="list-group-item  container-fluid">
-                <p>Course : B.Tech (E.C.E.)</p>
-              </li>
-              <li class="list-group-item  container-fluid">
-                <p>Duration of course : 2017-2021</p>
-              </li>
-            </ul>
-            <p id="institutionLink"><a href="https://www.msit.in/" target="_blank"
-                class="btn btn-outline-primary container-fluid">Click
-                to
-                Know more about my College.</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
+
 </div>
